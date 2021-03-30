@@ -100,6 +100,7 @@ Widget _chatRoomsList() {
                   print(ds.data());
                   List users=ds["users"];
                   if(users.contains(PrefsUtil().getUserId())){
+                  
   return ChatRoomListTile(ds["lastMessage"], ds.id, PrefsUtil().getUserId());
                   }else{
                     return Container();
@@ -126,12 +127,18 @@ return FutureBuilder(
                 shrinkWrap: true,
                 itemBuilder: (context, index) {
                   DocumentSnapshot ds = snapshot.data.docs[index];
-                  return UserListTile(
+                  if(_prefs.getUserId()!=ds.id){
+  return UserListTile(
                     id: ds.id,
                       imgUrl: ds["imgUrl"],
                       name: ds["name"],
                       email: ds["email"],
                       );
+                  }else{
+
+                    return Container();
+                  }
+                
                 },
               )
             : Center(
