@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "900419706572",
+    "project_id": "examplecha",
+    "storage_bucket": "examplecha.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:900419706572:android:a826a7408ea779851a6c69",
+        "android_client_info": {
+          "package_name": "com.example.propanochat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "900419706572-8bhgf5pcn32k3bfhel3ccpsc8phal4a2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAO4QipnoHNHlxQe4DxXY05hu5pPL2n9n4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "900419706572-8bhgf5pcn32k3bfhel3ccpsc8phal4a2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
