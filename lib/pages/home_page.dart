@@ -100,7 +100,7 @@ Widget _chatRoomsList() {
                   print(ds.data());
                   List users=ds["users"];
                   if(users.contains(PrefsUtil().getUserId())){
-                  
+                  print('Necesito tugsteno');
   return ChatRoomListTile(ds["lastMessage"], ds.id, PrefsUtil().getUserId());
                   }else{
                     return Container();
