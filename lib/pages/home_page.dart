@@ -99,6 +99,7 @@ Widget _chatRoomsList() {
                   DocumentSnapshot ds = snapshot.data.docs[index];
                   print(ds.data());
                   List users=ds["users"];
+                print(users);
                   if(users.contains(PrefsUtil().getUserId())){
                   print('Necesito tugsteno');
   return ChatRoomListTile(ds["lastMessage"], ds.id, PrefsUtil().getUserId());
